@@ -1,12 +1,9 @@
--- Створення бази даних db_3
 CREATE DATABASE db_db;
 GO
-
--- Використання бази даних db_3
 USE db_db;
 GO
 
--- Створення таблиці Кафедри (Departments)
+
 CREATE TABLE Departments (
     Id INT PRIMARY KEY IDENTITY,
     Financing MONEY NOT NULL,
@@ -14,7 +11,7 @@ CREATE TABLE Departments (
 );
 GO
 
--- Створення таблиці Факультети (Faculties)
+
 CREATE TABLE Faculties (
     Id INT PRIMARY KEY IDENTITY,
     Dean NVARCHAR(MAX) NOT NULL,
@@ -22,7 +19,7 @@ CREATE TABLE Faculties (
 );
 GO
 
--- Створення таблиці Групи (Groups)
+
 CREATE TABLE Groups (
     Id INT PRIMARY KEY IDENTITY,
     Name NVARCHAR(10) NOT NULL UNIQUE,
@@ -31,7 +28,7 @@ CREATE TABLE Groups (
 );
 GO
 
--- Створення таблиці Викладачі (Teachers)
+
 CREATE TABLE Teachers (
     Id INT PRIMARY KEY IDENTITY,
     EmploymentDate DATE NOT NULL,
